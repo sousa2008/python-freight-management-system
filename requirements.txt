@@ -1,0 +1,4 @@
+streamlit
+gspread
+sqlite3
+datetime
