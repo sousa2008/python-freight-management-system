@@ -13,3 +13,6 @@ Uma aplicação web full-stack desenvolvida para automatizar a leitura, o cálcu
 * **Streamlit** (Front-end web e visualização)
 * **SQLite** (Banco de dados relacional / Histórico)
 * **Gspread / Google Cloud Console** (Comunicação com a API do Sheets)
+
+## Exemplo do funcionamento
+![Demonstração do Dashboard](dashboard-print.jpg)
