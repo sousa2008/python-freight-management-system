@@ -60,7 +60,11 @@ def processarPagamentos (dados_planilha):
 
 def conectarPlanilha ():
     # -- CONEXÃO COM O GOOGLE SHEETS -- #
-    conta = gspread.service_account(filename='credenciais.json')
+    # Desvio para conectar mesmo se não achar as credenciais
+    try:
+        conta = gspread.service_account(filename='credenciais.json')
+    except:
+        conta = gspread.service_account_from_dict(st.secrets["gcp"])
     planilha = conta.open('PAGAMENTO MOTORISTA 2026 - V2')
     aba = planilha.worksheet('BANCO')
 
